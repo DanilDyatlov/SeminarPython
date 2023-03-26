@@ -1,9 +1,9 @@
 # Создайте список из случайных чисел. 
 # Найдите второй максимум.
 
-import random
-input_list = [random.randint(1, 100) for _ in range(10)]
-print(input_list)
+# import random
+# input_list = [random.randint(1, 100) for _ in range(10)]
+# print(input_list)
 
 import random
 input_list = list(set([random.randint(1, 32) for _ in range(20)]))
