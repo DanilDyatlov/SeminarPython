@@ -9,6 +9,7 @@
 #     1 2 3 4 5
 #     3
 #     -> 1
+# print('Задача №16')
 # import time
 
 # input_list = [] # пустой список 
@@ -46,26 +47,27 @@
 #     6
 #     -> 5
 
-import random
-input_list = [random.randint(1, 100) for _ in range(10)]
-number_set = set(input_list)
-print(number_set)
-diff = 1 # разница, которую будем вычитать\прибавлять  
-number = int(input("Введите число для сравнения: "))
-while True:
-    if number - diff in number_set:
-        print (number - diff)
-        break
-    elif number + diff in number_set:
-        print (number + diff)
-        break
-    diff +=1
+# print('Задача №18')
+# import random
+# input_list = [random.randint(1, 100) for _ in range(10)]
+# number_set = set(input_list)
+# print(number_set)
+# diff = 1 # разница, которую будем вычитать\прибавлять  
+# number = int(input("Введите число для сравнения: "))
+# while True:
+#     if number - diff in number_set:
+#         print (number - diff)
+#         break
+#     elif number + diff in number_set:
+#         print (number + diff)
+#         break
+#     diff +=1
 
 # *Задача 20: * В настольной игре Скрабл (Scrabble) каждая буква имеет определенную ценность. 
 # В случае с английским алфавитом очки распределяются так:
 # A, E, I, O, U, L, N, S, T, R – 1 очко; 
 # D, G – 2 очка; 
-# , C, M, P – 3 очка; 
+# B, C, M, P – 3 очка; 
 # F, H, V, W, Y – 4 очка; 
 # K – 5 очков; 
 # J, X – 8 очков; 
@@ -81,6 +83,15 @@ while True:
 # которое содержит либо только английские, либо только русские буквы.
 
 # *Пример:*
-
 # ноутбук
 #     12
+
+# print('Задача №20')
+# input_str = input('Введите слово на англ языке: ').upper()
+# scrabble_dick = {'A': 1, 'E': 1, 'I': 1, 'O': 1, 'U':1, 'L':1, 'N':1, 'S':1, 'T':1, 'R':1, 
+#                  'D':2 , 'G':2, 'B':3, 'C':3, 'M':3, 'P':3, 'F':4, 'H':4, 'V':4, 'W':4, 'Y':4, 
+#                  'K':5, 'J':8, 'X':8, 'Q':10, 'Z':10}
+# count = 0
+# for i in range(len(input_str)):
+#     count = count + scrabble_dick[input_str[i]] # в словарь кладем часть слова по индексу (букву) и она является ключом 
+# print(f'Ценность введенного слова {count}')
