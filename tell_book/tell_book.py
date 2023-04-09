@@ -16,7 +16,7 @@ import tell_book_function
 
 
 while True:
-    print('1. вывод, 2. добавление, 3. поиск')
+    print('Выберите действие: 1. вывод, 2. добавление, 3. поиск, 4. изменить, 5. удалить')
     mode = int(input())
     if mode == 1:
         tell_book_function.show_data()
@@ -24,5 +24,9 @@ while True:
         tell_book_function.add_data()
     elif mode == 3:
         tell_book_function.find_data()
+    elif mode == 4:
+        tell_book_function.change_data()
+    elif mode == 5:
+        tell_book_function.delete_data()
     else:
         break
